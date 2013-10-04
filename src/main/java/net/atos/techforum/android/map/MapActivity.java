@@ -1,6 +1,5 @@
 package net.atos.techforum.android.map;
 
-import net.atos.techforum.android.R;
 import android.app.Activity;
 import android.location.Location;
 import android.location.LocationListener;
@@ -19,6 +18,8 @@ import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.FragmentById;
 import com.googlecode.androidannotations.annotations.SystemService;
 import com.googlecode.androidannotations.annotations.UiThread;
+
+import net.atos.techforum.android.R;
 
 @EActivity(R.layout.activity_map)
 public class MapActivity extends Activity implements LocationListener {

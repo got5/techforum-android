@@ -1,18 +1,5 @@
 package net.atos.techforum.android.message;
 
-import java.util.Collections;
-import java.util.List;
-
-import net.atos.techforum.android.Helper;
-import net.atos.techforum.android.rest.pojo.Message;
-
-import com.googlecode.androidannotations.annotations.AfterInject;
-import com.googlecode.androidannotations.annotations.Background;
-import com.googlecode.androidannotations.annotations.Bean;
-import com.googlecode.androidannotations.annotations.EBean;
-import com.googlecode.androidannotations.annotations.RootContext;
-import com.googlecode.androidannotations.annotations.UiThread;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -21,6 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Toast;
+
+import com.googlecode.androidannotations.annotations.AfterInject;
+import com.googlecode.androidannotations.annotations.Background;
+import com.googlecode.androidannotations.annotations.Bean;
+import com.googlecode.androidannotations.annotations.EBean;
+import com.googlecode.androidannotations.annotations.RootContext;
+import com.googlecode.androidannotations.annotations.UiThread;
+
+import net.atos.techforum.android.Helper;
+import net.atos.techforum.android.rest.pojo.Message;
+
+import java.util.Collections;
+import java.util.List;
 
 @EBean
 public class MessageListAdapter extends BaseAdapter {

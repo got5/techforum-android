@@ -1,8 +1,8 @@
 package net.atos.techforum.android.message;
 
-import java.util.List;
-
 import net.atos.techforum.android.rest.pojo.Message;
+
+import java.util.List;
 
 public interface MessageFinder {
 	

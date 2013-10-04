@@ -1,8 +1,13 @@
 package net.atos.techforum.android.conference.list;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.Toast;
 
 import com.googlecode.androidannotations.annotations.AfterInject;
 import com.googlecode.androidannotations.annotations.Background;
@@ -15,14 +20,9 @@ import net.atos.techforum.android.conference.ConferenceFinder;
 import net.atos.techforum.android.conference.WebConferenceFinder;
 import net.atos.techforum.android.rest.pojo.Conference;
 
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.Toast;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
  
 @EBean
 public class ConferenceListAdapter extends BaseAdapter implements Filterable {

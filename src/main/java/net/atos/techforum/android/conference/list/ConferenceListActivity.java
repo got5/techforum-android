@@ -1,13 +1,11 @@
 package net.atos.techforum.android.conference.list;
 
-import net.atos.techforum.android.R;
-import net.atos.techforum.android.message.ConferenceDetailsActivity_;
-import net.atos.techforum.android.rest.pojo.Conference;
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.ListView;
+
 import com.googlecode.androidannotations.annotations.AfterViews;
 import com.googlecode.androidannotations.annotations.Background;
 import com.googlecode.androidannotations.annotations.Bean;
@@ -15,6 +13,10 @@ import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.ItemClick;
 import com.googlecode.androidannotations.annotations.ViewById;
+
+import net.atos.techforum.android.R;
+import net.atos.techforum.android.message.ConferenceDetailsActivity;
+import net.atos.techforum.android.rest.pojo.Conference;
 
 @EActivity(R.layout.activity_conference_list)
 public class ConferenceListActivity extends Activity {
@@ -33,7 +35,8 @@ public class ConferenceListActivity extends Activity {
 
 	@ItemClick
 	void listItemClicked(Conference c) {
-		Intent intent = ConferenceDetailsActivity_.intent(this).get();
+		Intent intent = new Intent(this, ConferenceDetailsActivity.class);
+                //ConferenceDetailsActivity.intent(this).get();
 		intent.putExtra("id_conference", c.get_id());
 		startActivity(intent);
 	}

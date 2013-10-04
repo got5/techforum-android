@@ -1,9 +1,5 @@
 package net.atos.techforum.android.message;
 
-import net.atos.techforum.android.R;
-import net.atos.techforum.android.conference.ConferenceFinder;
-import net.atos.techforum.android.conference.WebConferenceFinder;
-import net.atos.techforum.android.rest.pojo.Conference;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.widget.ListView;
@@ -17,6 +13,11 @@ import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.Extra;
 import com.googlecode.androidannotations.annotations.UiThread;
 import com.googlecode.androidannotations.annotations.ViewById;
+
+import net.atos.techforum.android.R;
+import net.atos.techforum.android.conference.ConferenceFinder;
+import net.atos.techforum.android.conference.WebConferenceFinder;
+import net.atos.techforum.android.rest.pojo.Conference;
 
 @EActivity(R.layout.activity_conference_details)
 public class ConferenceDetailsActivity extends Activity {
@@ -55,7 +56,7 @@ public class ConferenceDetailsActivity extends Activity {
 	
 	@UiThread
 	void onRequest() {
-		dialog = ProgressDialog.show(this, "Loading...", "Retrieving data frow server");
+		dialog = ProgressDialog.show(this, "Loading...", "Retrieving data from server");
 	}
 	
 	@UiThread

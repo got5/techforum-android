@@ -1,8 +1,8 @@
 package net.atos.techforum.android.conference;
 
-import java.util.List;
-
 import net.atos.techforum.android.rest.pojo.Conference;
+
+import java.util.List;
 
 public interface ConferenceFinder {
 

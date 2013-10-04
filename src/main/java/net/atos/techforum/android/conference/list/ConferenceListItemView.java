@@ -1,14 +1,14 @@
 package net.atos.techforum.android.conference.list;
 
-import net.atos.techforum.android.R;
-import net.atos.techforum.android.rest.pojo.Conference;
+import android.content.Context;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.googlecode.androidannotations.annotations.EViewGroup;
 import com.googlecode.androidannotations.annotations.ViewById;
 
-import android.content.Context;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import net.atos.techforum.android.R;
+import net.atos.techforum.android.rest.pojo.Conference;
 
 @EViewGroup(R.layout.item_conference_list)
 public class ConferenceListItemView extends LinearLayout {

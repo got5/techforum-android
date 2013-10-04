@@ -1,15 +1,15 @@
 package net.atos.techforum.android.message;
 
-import net.atos.techforum.android.R;
-import net.atos.techforum.android.rest.pojo.Message;
-
-import com.googlecode.androidannotations.annotations.EViewGroup;
-import com.googlecode.androidannotations.annotations.ViewById;
-
 import android.content.Context;
 import android.text.format.DateFormat;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.googlecode.androidannotations.annotations.EViewGroup;
+import com.googlecode.androidannotations.annotations.ViewById;
+
+import net.atos.techforum.android.R;
+import net.atos.techforum.android.rest.pojo.Message;
 
 @EViewGroup(R.layout.item_message_list)
 public class MessageListItemView extends LinearLayout {

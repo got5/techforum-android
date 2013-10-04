@@ -1,8 +1,10 @@
 package net.atos.techforum.android.message;
 
-import java.util.Date;
-
-import org.springframework.http.ResponseEntity;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.googlecode.androidannotations.annotations.Background;
 import com.googlecode.androidannotations.annotations.Click;
@@ -14,11 +16,10 @@ import com.googlecode.androidannotations.annotations.rest.RestService;
 import net.atos.techforum.android.R;
 import net.atos.techforum.android.rest.RestClient;
 import net.atos.techforum.android.rest.pojo.Message;
-import android.content.Context;
-import android.util.AttributeSet;
-import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+
+import org.springframework.http.ResponseEntity;
+
+import java.util.Date;
 
 @EViewGroup(R.layout.item_message_form)
 public class MessageForm extends LinearLayout {
